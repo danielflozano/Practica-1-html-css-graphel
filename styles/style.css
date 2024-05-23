@@ -1,48 +1,37 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /*Fuente de la letra*/
 }
 
 header {
-    display: flex;
-    height: 100px;
+    display: flex; /*Se utiliza para mostrar un elemento como un contenedor flexible a nivel de bloque*/
+    height: 100px; /*Altura del contenedor*/
     background-color: #24282b;
-    justify-content: space-around;
+    justify-content: space-around; /*Se utiliza para justificar los divs o contenedores que esten dentro de este contenedor padre*/
     border-bottom: 5px solid #1293d4;
 }
 
 h1 {
-    margin-top: auto;
-    margin-bottom: auto;
     color: white;
+    font-size: 50px; /*Tamaño de la letra*/
+    text-align: center;
 }
 
 nav {
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: auto; /*Margin top y bottom los utilicé para centrar el nav en el header*/
 }
 
 ul {
     display: flex;
-    list-style-type: none;
+    list-style-type: none; /*Se utiliza para quitar los puntos de las listas*/
     gap: 30px;
 }
 
-li {
-    text-decoration: none;
-}
-
 a {
-    text-decoration: none;
+    text-decoration: none; /*Se utiliza para quitar el subrayado de las listas*/
     color: white;
-}
-
-section {
-    display: flex;
-    height: 100px;
-    background-color: #24282b;
-    justify-content: space-around;
 }
 
 h2 {
@@ -56,12 +45,12 @@ form {
     margin-bottom: auto;
 }
 
-input[type=text] {
-    width: 220px;
+input.formPrincipal[type=text] {
+    width: 220px; /*Ancho del contenedor*/
     padding: 8px 0px;
 }
 
-input[type=submit] {
+input.formPrincipal[type=submit] {
     background-color: #e44d26;
     color: white;
     padding: 10px 20px;
@@ -69,9 +58,18 @@ input[type=submit] {
 
 main {
     display: flex;
-    height: 400px;
-    justify-content: space-around;
-    
+    background-color: #f4f4f4;
+}
+
+footer {
+    display: flex;
+    height: 100px;
+    background-color: #1293d4;
+    color: white;
+}
+
+.h2Principal {
+    font-size:xx-large;
 }
 
 .multimedia_titulo {
@@ -83,12 +81,133 @@ main {
 }
 
 .cabecera {
-    height: 500px;
-    background-image: url(/assets/images/cabecera.jpg);
-    background-position: center;
-    background-size: cover;
+    display: flex;
+    height: 350px;
+    background-image: url(../assets/images/cabecera.jpg); /*Se utiliza para poner una imagen de fondo*/
+    background-position: center; /*Centra la imagen que se utilizó de fondo*/
+    background-size: cover; /*Se utiliza para no dejar duplicar la imagen de fondo cuando se haga zoom en el navegador*/
 }
 
-.principal {
-    height: 20%;
+.cabecera2 {
+    width: 65%; 
+    margin-top: 100px;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.parrTituloPrincipal {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sectionPrincipal {
+    display: flex;
+    height: 100px;
+    background-color: #24282b;
+    justify-content: space-around;
+}
+
+.mainPrincipal {
+    justify-content: space-evenly;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.divPrincipal {
+    width: 300px; /*Ancho*/
+    height: 300px; /*Altura*/
+}
+
+.imgPrincipal {
+    height: 30%;
+    display: block; /*Muestra un elemento como un elemento de bloque.*/
+    margin: 30px auto;
+}
+
+.h3ImgPrincipal {
+    text-align: center;
+}
+
+.parrImgPrincipal {
+    text-align: center;
+}
+
+.copyrigth {
+    margin: auto;
+}
+
+article {
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+aside {
+    width: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sectionNosotros {
+    margin: 10px 5% 10px 10%;
+}
+
+.sectionNosotros2 {
+    margin: 10px 5% 10px 10%;
+    padding: 15px;
+    background-color: #35424a;
+    color: white;
+}
+
+.imgSectionNosotros {
+    width: 100%;
+}
+
+.sectionQueHacemos {
+    margin: 10px 23.33% 10px 0;
+    padding: 40px 30px 30px 20px;
+    background-color: #35424a;
+    color: white;
+}
+
+h3.h3Servicios {
+    margin: 10px 5% 20px 10%;
+}
+
+.sectionServicios {
+    background-color: #e6e6e6;
+    border: groove;
+    margin: 10px 5% 10px 10%;
+    padding: 4% 4% 4% 2%;
+}
+
+.sectionMap {
+    margin: 10px 23.33% 10px 0;
+    color: white;
+}
+
+img.map {
+    width: 100%;
+}
+
+input.formContacto[type=text] {
+    width: 100%; /*Ancho del contenedor*/
+    height: 40px;
+    margin-bottom: 12px;
+}
+
+textarea {
+    width: 95%; /*Ancho del contenedor*/
+    height: 130px;
+    margin-bottom: 12px;
+    padding: 12px 2.5%;
+    resize: none;
+}
+
+input.formContacto[type=submit] {
+    width: 100%;
+    height: 40px;
+    background-color: #e44d26;
+    color: white;
 }
