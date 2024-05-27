@@ -177,7 +177,7 @@ h3.h3Servicios {
 
 .sectionServicios {
     background-color: #e6e6e6;
-    border: groove;
+    border: solid 1px #ccc;
     margin: 10px 5% 10px 10%;
     padding: 4% 4% 4% 2%;
 }
